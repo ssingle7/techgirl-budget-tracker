@@ -1,63 +1,60 @@
-# techgirl budget tracker
+# Tech Girl Budget Tracker 📈
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+## Description
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+Budget Tracker is a progressive web application that allows users to track their budgets by adding expenses and deposits to their budget through the "Add/Subtract Funds" buttons. They are able to add a transaction with or without a connection. When a user enters a transaction while offline, these transactions are stored in the indexedDB, and transferred to the database when the user comes back online.
+## Installation
 
-Offline Functionality:
+To install the required dependencies, run `npm install`
 
-  * Enter deposits offline
+This package assumes there is a MongoDB server running on localhost:27017. If your server is running somewhere else, you can edit `server.js` to reflect that.
 
-  * Enter expenses offline
+## Usage
+### Screenshots
 
-When brought back online:
+An example screenshot of the application:
 
-  * Offline entries should be added to tracker.
-
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
-
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+![Site](budget.PNG)
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 
-- - -
+![Site](budget2.PNG)
 
-## Commit Early and Often
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+Please check out the launched app on Heroku [here](https://mysterious-sands-34008.herokuapp.com/)!
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Credits
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+* Tutor 
 
-* Follow these guidelines for committing:
+* Classmates
+### Built With
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+</br>
+<p align="center">
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/-HTML-orange?style=for-the-badge"  alt="HMTL" /></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-blue?style=for-the-badge" alt="CSS" /></a>
+    <a href="https://www.javascript.com/"><img src="https://img.shields.io/badge/-Javascript-yellow?style=for-the-badge" alt="Javascript" /></a>
+    <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/-Node-orange?style=for-the-badge" alt="Node" /></a>
+    <a href="https://www.npmjs.com/package/express"><img src="https://img.shields.io/badge/-Express-blue?style=for-the-badge" alt="Express" /></a>
+    <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/-MongoDB-blue?style=for-the-badge" alt="MongoDB" /></a>
+</p>
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+## License
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+</br>
+<p align="center">
+    <img align="center" src="https://img.shields.io/github/license/kqarlos/fitness-tracker?style=for-the-badge" alt="MIT license" />
+</p>
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+Copyright (c) [2020] [Selena Singleton]
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
 
-## Submission on BCS
 
-* You are required to submit the following:
 
-  * the URL to the deployed application
 
-  * the URL to the Github repository
+
+
+
 
